@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+      }
+      #box{
+        height: 200px;
+        width: 200px;
+        background-color: coral;
+        border: 2px solid white;
+        b
+      }
+
+    </style>
+  </head>
+  <body>
+    <p id="pintu" onmousedown="downfun()" onmouseup="upfun()">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quia
+      alias odio sapiente neque laudantium ut voluptatem hic molestiae, quod
+      quidem illo recusandae optio, velit autem officia accusantium magnam
+      voluptatibus! Corporis possimus in enim recusandae dicta nam omnis quaerat
+      odit aperiam nostrum quam cumque rem eveniet, alias veniam, necessitatibus
+      molestias explicabo quas doloremque. Lab ulla
+      doloremque rem. Odio ea quis amet illum atque assumenda nemo accusamus
+      iure voluptatem? Sunt modi ipsam, minima labore, quasi vero praesentium
+      ipsum ducimus iste, sit debitis magnam saepe autem sint? Delectus, eum?
+
+      <br><br><br>
+      <div id="box">
+      box
+      </div>
+      
+      <script>
+        let a = document.getElementById("box");
+          a.addEventListener('mouseenter',()=>{
+            console.log('maouse enter bro');
+            a.style.backgroundColor = 'red';
+          });
+        // let a = document.getElementById("box");
+          a.addEventListener('mouseleave',()=>{
+            console.log('mouse leave bro')
+            a.style.backgroundColor = 'pink';
+          });
+
+
+         function downfun(){
+            document.getElementById("pintu").style.color="red";
+         }
+         function upfun(){
+            document.getElementById("pintu").style.Color="";
+         }
+      </script>
+    </p>
+  </body>
+</html>

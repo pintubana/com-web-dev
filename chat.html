@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Food Delivery</title>
+    <style>
+      /* Add your CSS styles here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: azure;
+      }
+
+      header {
+        background-color: rgb(27, 25, 25);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        list-style: none;
+        text-align: center;
+        background-color: slategrey;
+        padding: 10px;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      .btn2 {
+        position: absolute;
+        right: 20px;
+        width: 150px;
+        /* color: white; */
+        display: inline-block;
+        margin-right: 55px;
+      }
+      .btn2:hover {
+        background-color: darkorange;
+        color: black;
+      }
+      .btn {
+        position: absolute;
+        right: 10px;
+        width: 40px;
+        height: 23px;
+        margin-bottom: 5px;
+        background-color: white;
+        /* top: 1px; */
+        /* margin: 17px; */
+        display: inline-block;
+        /* border: 2px solid rgb(223, 192, 213); */
+      }
+      .btn:hover {
+        background-color: darkorange;
+        color: black;
+      }
+
+      main {
+        height: 1000px;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        text-align: center;
+      }
+      .keys:hover {
+        text-decoration: solid;
+      }
+      main img {
+        height: 800px;
+        width: 800px;
+        margin: 10px;
+      }
+      /* .pintu{ align-items: center; */
+      /* height: 100px;
+        width: 100%;
+        margin-top: 30px;
+        background-color: aquamarine;
+        background-position: center;
+      } */
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Food Delivery</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cart</a></li>
+        <button class="btn2">search now</button>
+        <button class="btn">click</button>
+      </ul>
+    </nav>
+    <main>
+      <h2>Welcome to my pintu jhala ki food delivery service!</h2>
+      <p>Order delicious and very testy and very helthful for you...</p>
+      <img src="backimg1.jpg" alt="" />
+    </main>
+    <!-- <div class="pintu">
+      <h1>PINTU</h1>
+<img src="gym.jpg" alt="not found">
+    </div> -->
+    <footer>
+      <p>&copy; 2023 Food Delivery</p>
+      <p>&hearts; thank you for visiting</p>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+    <script>
+      // ?this is callbacks function
+      // function hello(callback) {
+      //   setTimeout(() => {
+      //     console.log("hello");
+      //     callback();
+      //   }, 8000);
+      // }
+
+      // function helo() {
+      //   setTimeout(() => {
+      //     console.log("hello");
+      //   }, 5000);
+      // }
+
+      // function hey() {
+      //   setTimeout(() => {
+      //     console.log("hello");
+      //   }, 6000);
+      // }
+
+      // function namaste() {
+      //   setTimeout(() => {
+      //     console.log("hello");
+      //   }, 7000);
+      // }
+      // function namas() {
+      //   setTimeout(() => {
+      //     alert("hello");
+      //   }, 1000);
+      // }
+      // hello(function () {
+      //   helo();
+      //   hey();
+      //   namaste();
+      //   namas();
+      // });
+      // console.log("pintu jhala");
+      // ?
+      // this is promise
+//       function jhala() {
+//         return new Promise((resolve, reject) => {
+//           setTimeout(() => {
+//             return reject("error while jhala");
+//             console.log("jhala");
+//             // resolve();
+//           }, 8000);
+//         });
+//       }
+//       function singh() {
+//         return new Promise((resolve, reject) => {
+//           setTimeout(() => {
+//             console.log("singh");
+//             resolve();
+//           }, 4000);
+//         });
+//       }
+//       function rajput(){
+//         return new Promise(function(resolve,reject){
+//           setTimeout(function(){
+//             console.log("rajput");
+//             resolve();
+//           },3000);
+//         });
+//       };
+//       jhala()
+//       .then(singh)
+//       .then(rajput)
+//       .catch((err)=>{
+//         console.log('error ', err);
+//       });
+//       x
+      
+//       console.log("ok this is complete");
+fetch( 'https://randomuser.me/api/')
+.then((apidata)=>{
+  console.log(apidata);
+return apidata.json().then((actualdata)=>{
+  console.log(actualdata);
+})
+
+}).then((actualdata)=>{
+  console.log(actualdata);
+}).catch((error)=>{
+console.log(error);
+});
+     </script>
+   </body>
+</html>

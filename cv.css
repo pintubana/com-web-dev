@@ -1,0 +1,113 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+ 
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkblue;
+    font-family: 'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    line-height: 1
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+nav{
+    background: rgb(51, 5, 95);
+    padding: 1rem 0;
+}
+nav .inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .inner .logo{
+    text-transform: uppercase;
+    color: var(--pure);
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+nav .inner .logo i{
+    color: red;
+}
+nav .inner button{
+    background-color: blue;
+    /* color: white; */
+    padding: 0.4rem;
+    border: none;
+    border-radius: 5px;
+    /* margin-top: 0%; */
+}
+ 
+section.profile img{
+    background-size: cover;
+     height: 80px;
+     width: 80px;
+    border-radius: 50%;
+}
+section.profile{
+    background-color: rgb(28, 19, 19);
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 60px;
+}
+section.profile.left{
+    flex:2;
+    display: flex;
+}
+section.profile.right{
+    flex:1;
+}
+section.profile.h2{
+    font-size: ;
+}
+
+header{
+    background-color: darkcyan;
+    color: white;
+    height: 25px;
+    
+}
+ul li{
+    float: left;
+    /* text-decoration: none; */
+}
+li{
+    /* color: azure;? */
+    
+    list-style:   none;
+    /* margin:   20px; */
+    margin-right: 50px;
+}
+li a{
+    /* text-align: center;? */
+    color: white;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: black;
+    text-decoration: underline;
+}
+.input1{
+    margin-right: 20px;
+    float: right;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius:10px ;
+}
+.icon{
+    background-color: darkcyan;
+    width: 20px;
+    color: white;
+    /* border-radius: 20px;? */
+}

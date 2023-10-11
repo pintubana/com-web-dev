@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contanner{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="contanner">
+        <form>
+            <h1>
+                Contact us my Form
+            </h1>
+            <input type="text" id="FirstName" placeholder="First Name" required>
+            <input type="text" id="Last Name" placeholder="lastname" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="mobile" placeholder="mobile" required>
+            <h3>write your self!</h3>
+            <textarea required></textarea>
+            <input type="submit" value="send">
+        </form>
+    </div>
+    <br><hr>
+    <h2>Convert a string into a date object.</h2>
+<p id="demo"></p>
+
+<script>
+const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+const obj = JSON.stringify(text);
+// text.birth = new Date(text.birth);
+// document.getElementById("demo").innerHTML = text.name + ", " +  text.birth; 
+console.log(obj);
+</script>
+</body>
+</html>

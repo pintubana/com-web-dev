@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>print the page</title>
+    <!-- <link rel="stylesheet" href="style3.css"> -->
+  </head>
+  <body style="background-color: black; color: white;">
+     <div id="id divone">
+      this is a first div.....
+      <button  onclick="myfun()">divone</button>
+     </div>
+     <div id="ditwo">
+      this is a second div
+      <button  onclick="myfun()">divtwo</button>
+     </div>
+     <div id="divthree">
+      this is a third div....
+      <button  onclick="myfun()">divthree</button>
+     </div>
+     <button onclick="wholepage()">wholepage</button>
+     <h1>click here and change body color</h1>
+     <button onclick="fun()">click me</button>
+     <button onclick="fun2()">click me</button>
+     <button onclick="fun3()">click me</button>
+     <div>
+      <ul>
+        <li><img width="200px" id="first" src="box2_image.jpg" alt=""></li>
+        <li><img width="200px" id="second" src="box3_image.jpg" alt=""></li>
+        <li><img width="200px" id="third" src="box4_image.jpg" alt=""></li>
+        <li><img width="200px" id="four" src="box5_image.jpg" alt=""></li>
+      </ul>
+     </div>
+<script>
+  function wholepage(){
+    window.print();
+  }
+
+  function myfun(paravalue){
+   var backup = document.body.innerHTML;
+    var divcontant = document.getElementById(
+      paravalue).innerHTML;
+    document.body.innerHTML = divcontant;
+    window.print();
+    document.body.innerHTML = backup;
+    // window.print()
+  }
+
+   function fun(){
+    document.body.style.backgroundColor = "blue";
+    document.body.style.color = "white";
+   }
+   function fun2(){
+    document.body.style.backgroundColor = "red";
+    document.body.style.color = "white";
+   }
+   function fun3(){
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+   }
+</script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pintu gym</title>
+    <style>
+      body {
+        background-image: url(baggym.jpg);
+        background-size: cover;
+        /* background-color: blueviolet; */
+        color: white;
+        padding: 0px;
+        margin: 0px;
+      }
+      .header {
+        /* background-color: black; */
+        width: 100%;
+        height: 50px;
+        /* font-family: 'Times New Roman', Times, serif; */
+      }
+      .navbar li {
+        display: inline-block;
+        font-size: 20px;
+      }
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+      }
+      .navbar li a:hover,
+      .navbar li a:active {
+        color: chocolate;
+        text-decoration: underline;
+      }
+
+      .left {
+        position: absolute;
+        left: 10px;
+        top: 1px;
+        /* margin-right: 0px; */
+        margin: 7px;
+        display: inline-block;
+        /* border: 2px solid rgb(217, 255, 0); */
+      }
+      .left img {
+        width: 100px;
+        /* margin-top: 0px; */
+      }
+
+      .mid {
+        position: relative;
+        top: 1px;
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+      }
+      .right {
+        position: absolute;
+        right: 10px;
+        top: 1px;
+        margin: 17px;
+        display: inline-block;
+        /* border: 2px solid rgb(223, 192, 213); */
+      }
+      .btn:hover {
+        background-color: cornflowerblue;
+      }
+      .btn {
+        margin: 0px 10px;
+        padding: 4px 14px;
+        background-color: darkgrey;
+        border-radius: 8px;
+        font-size: 17px;
+        cursor: pointer;
+      }
+      .contaner {
+        border: 2px solid rgb(251, 251, 242);
+        margin: 106px 88px;
+        padding: 80px;
+        width: 33%;
+        border-radius: 30px;
+        /* text-align: center; */
+      }
+      .pintu input {
+        display: block;
+        /* display: flex; */
+        /* justify-content: center; */
+        text-align: center;
+        width: 404px;
+        margin: 20px auto;
+        padding: 10px;
+        border: 2px solid rgb(203, 25, 25);
+        border-radius: 10px;
+        font: size 23px;
+      }
+      .contaner h1 {
+        text-align: center;
+      }
+      .contaner button {
+        display: block;
+        width: 25%;
+        margin: auto;
+        /* text-align: center; */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="logo mb pg.png" alt="" />
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">about Us</a></li>
+          <li><a href="#">servise</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Calll Us Now</button>
+        <button class="btn">Email US</button>
+      </div>
+    </header>
+    <div class="contaner">
+      <h1>join the best gym of jhalawar Now</h1>
+      <form action="noaction.php">
+        <div class="pintu">
+          <input type="text" name="" placeholder="Enter Your Name" />
+        </div>
+        <div class="pintu">
+          <input type="email" name="" placeholder="Enter Your Email" />
+        </div>
+        <div class="pintu">
+          <input type="number" name="" placeholder="Enter Your age" />
+        </div>
+        <button class="btn">submit</button>
+      </form>
+    </div>
+  </body>
+</html>

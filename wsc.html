@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="wsc.css">
+    <style>
+      table {
+        background-color: yellow;
+        color: black;
+        /* border: 2px solid red; */
+      }
+      .main {
+        border: 3px dotted black;
+        width: 500px;
+        height: 500px;
+        background-color: coral;
+        color: white;
+      }
+      .parent1-row {
+        height: 250px;
+        width: 500px;
+        background-color: chartreuse;
+      }
+      .parent2-row {
+        height: 250px;
+        width: 500px;
+        background-color: rgb(247, 219, 13);
+      }
+
+      .cell1 {
+        height: 250px;
+        width: 250px;
+        background-color: blue;
+        float: left;
+      }
+      .cell2 {
+        height: 250px;
+        width: 250px;
+        background-color: aqua;
+        float: left;
+        /* border: 3px solid rgb(229, 14, 14); */
+      }
+      .cell3 {
+        height: 250px;
+        width: 250px;
+        background-color: rgba(226, 236, 229, 0.129);
+        float: left;
+        /* border: 3px solid rgb(229, 14, 14); */
+      }
+      .cell4 {
+        height: 250px;
+        width: 250px;
+        background-color: rgb(255, 0, 234);
+        float: left;
+        /* border: 3px solid rgb(229, 14, 14); */
+      }
+      .heading{
+        letter-spacing: 50px; 
+        background-color: blueviolet;
+        color: cornsilk;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .para{
+        /* word-spacing: 20px;
+        letter-spacing: 40px; */
+        height: 400px;
+        width: 500px;
+        background-color: beige;
+        color: black;
+        font-style: italic;
+        font-weight: bolder;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>pintu jhala</legend>
+        <table border="3" align="center" cellpadding="10" cellspacing="10">
+          <thead>
+            <th>your nam</th>
+            <th>your class</th>
+            <th>your roll</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>pintu</td>
+              <td>12th</td>
+              <td>123232</td>
+            </tr>
+            <tr>
+              <td>rakesh</td>
+              <td>11th</td>
+              <td>123232</td>
+            </tr>
+            <tr>
+              <td colspa="3"></td>
+            </tr>
+            <tr>
+              <td>arjun</td>
+              <td>11th</td>
+              <td>123232</td>
+            </tr>
+            <tr>
+              <td>kapil</td>
+              <td>11th</td>
+              <td>123232</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- input -->
+        Range:<input type="range" name="range" min="0" max="40" value="" />
+        <div class="main">
+          <div class="parent1-row">
+            <div class="cell1">home</div>
+            <div class="cell2">about</div>
+          </div>
+          <div class="parent2-row">
+            <div class="cell3">gallery</div>
+            <div class="cell4">hello</div>
+          </div>
+        </div>
+        <div>
+          <h1 class="heading">welcome my page</h1>
+        </div>
+        <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nam
+          nobis ullam doloribus aperiam provident quae unde dolorum ipsam fugiat
+          molestias consectetur earum in sed totam veritatis officia amet
+          officiis.
+        </p>
+        <div class="maindiv">
+          <div class="row11"> <h1>welcome pintu jhala</h1></div>
+          <div class="row22">
+            <div class="row22-col1">home1</div>
+            <div class="row22-col2">courses2</div>
+            <div class="row22-col3">about3</div>
+            <div class="row22-col4">sasdsd4</div>
+            <div class="row22-col5">contus5</div>
+          </div>
+           
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

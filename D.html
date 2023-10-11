@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="ids">
+    <ul id="ultag"><li>hello</li>
+      <li>hey</li>
+      <li>pintu</li>
+      <li>jhala</li></ul>
+    <h1 id="domh1">
+      domh1
+      <span id="domid">m ; dome</span>
+      <span class="domclass">this is class </span>
+
+      this is a DOM section
+    </h1>
+    class2
+    <h2 id="domh2" class="domclass">this is 2 class</h2>
+    <p class="domclass" id="dompid"> this is 3 class</p>
+    <script text="text/javascript">
+   // how to access element by id
+      // const a = document.getElementById("domh1").
+      // innerHTML;
+      // document.write(a);
+      //
+      //
+      //
+ // // how to accesss element by class
+      // let b = document.getElementsByClassName("domclass")[0].innerHTML;
+      // document.write(b);
+      // let c = document.getElementsByClassName(" class22")[0].innerHTML
+      // document.write(c);
+// ? how to access  element by tagname
+      // const c = document.getElementsByTagName("h1");
+      // document.write(c)
+      // console.log(c);
+//  // ?how to access first and last childrn
+// const childss = document.body.children;
+// console.log(childss)
+// how to add a new elem by dom
+const para = document.createElement('p');
+const textNode= document.createTextNode("hello hy ");
+para.appendChild(textNode);
+console.log(para);
+document.body.appendChild(para);
+// ?second heading add a body 
+let h1t = document.createElement("h1");
+let textNodes =document.createTextNode("this is a heading");
+h1t.appendChild(textNodes);
+document.body.appendChild(h1t);
+console.log(h1t);
+// / third heading add in body by DOM
+const h11 = document.createElement("h2");
+const text = document.createTextNode('hello this is third heading');
+h11.appendChild(text);
+document.body.appendChild(h11);
+console.log(h11);
+const m = document.querySelector("ul");
+console.log(m);
+console.log(m.firstChild);
+
+console.log(m.lastChild);
+document.getElementById("ids").style.backgroundColor = "red";
+     document.getElementById("ids").style.color = "white";   
+     document.write(window.location.href); 
+     console.log(window.location.href);
+         </script>
+          
+  </body>
+</html>

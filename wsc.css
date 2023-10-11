@@ -1,0 +1,55 @@
+.maindiv{
+    background-color: coral;
+    height: 500px;
+    width: 500px;
+}
+.row11{
+    width: 500px;
+    height: 100px;
+    background-color: chartreuse;
+    text-align: center;
+    font-weight: bolder;
+
+}
+.row22{
+    background-color: blueviolet;
+    width: 500px;
+    height: 60px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.row22-col1{
+    width: 100px;
+    height: 60;
+    background-color: aqua;
+    float: left;
+}
+.row22-col2{
+    width: 100px;
+    height: 60;
+    background-color: rgb(3, 26, 26);
+    float: left;
+    color: white;
+}
+.row22-col3{
+    width: 100px;
+    height: 60;
+    background-color: rgb(224, 238, 238);
+    float: left;
+}
+.row22-col4{
+    width: 100px;
+    height: 60;
+    background-color: rgb(49, 38, 148);
+    float: left;
+}
+.row22-col5{
+    width: 100px;
+    height: 60;
+    background-color: burlywood;
+    float: left;
+}
+ 

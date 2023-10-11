@@ -1,0 +1,16 @@
+.navbar{
+    background-color: #ebd4d8;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+ 
+     a{
+    text-decoration: none;
+    color: yellow;
+ 
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+}
